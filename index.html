@@ -23,7 +23,7 @@ body{font-family:'Poppins',sans-serif;color:#03301E;background:#F5F7F6;overflow-
 
 /* ── NAV ── */
 nav{position:fixed;top:0;left:0;width:100%;z-index:1000;transition:all .4s ease;padding:10px 0;overflow:visible}
-nav.scrolled{background:rgba(245,247,246,0.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 2px 24px rgba(3,48,30,0.12);padding:10px 0}
+nav.scrolled{background:rgba(3,48,30,0.96);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 2px 24px rgba(3,48,30,0.35);padding:10px 0}
 .nav-inner{max-width:1200px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between}
 .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
 .nav-logo img{width:180px;height:68px;object-fit:contain;padding:2px 4px;filter:none;transition:transform .3s,filter .3s}
@@ -35,8 +35,8 @@ nav.scrolled .nav-logo img{width:180px;height:68px}
 .nav-links{display:flex;align-items:center;gap:36px;list-style:none}
 .nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:#C6A75E;transition:color .25s;letter-spacing:.3px}
 .nav-links a:hover{color:#e8c97a}
-nav.scrolled .nav-links a{color:var(--text2)}
-nav.scrolled .nav-links a:hover{color:var(--dark)}
+nav.scrolled .nav-links a{color:#C6A75E}
+nav.scrolled .nav-links a:hover{color:#e8c97a}
 .nav-cta{background:linear-gradient(135deg,#03301E,#0a5c38);color:#C6A75E!important;padding:10px 24px;border-radius:50px;font-weight:600!important;box-shadow:0 4px 16px rgba(3,48,30,0.35);transition:transform .2s,box-shadow .2s!important}
 .nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(3,48,30,0.45)!important}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
@@ -224,8 +224,8 @@ footer ul li{margin-bottom:10px}
 footer ul li a{font-size:13px;color:rgba(240,232,215,0.55);text-decoration:none;transition:color .2s}
 footer ul li a:hover{color:#C6A75E}
 .footer-bottom{max-width:1200px;margin:0 auto;padding-top:24px;border-top:1px solid rgba(245,247,246,0.1);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.footer-bottom p{font-size:12px;color:rgba(240,232,215,0.35)}
-.footer-bottom span{font-size:12px;color:rgba(198,167,94,0.7);font-weight:500}
+.footer-bottom p{font-size:12px;color:#C6A75E}
+.footer-bottom span{font-size:12px;color:#C6A75E;font-weight:500}
 
 /* ── ANIMATIONS ── */
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
