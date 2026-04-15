@@ -3,64 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Events Forever – Integrated Solutions for Events, Facilities, and Beyond</title>
+<title>Humble Hosts – Hospitality Consultancy · Est. 2017</title>
 <link rel="icon" type="image/png" href="logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;font-size:16px}
-body{font-family:'Poppins',sans-serif;color:#2d2d2d;background:#fffdf9;overflow-x:hidden}
+body{font-family:'Poppins',sans-serif;color:#03301E;background:#F5F7F6;overflow-x:hidden}
 :root{
-  --gold:#c9a84c;--gold2:#e8c97e;--gold3:#f5e6b8;
-  --cream:#fffdf9;--cream2:#fdf6ec;--cream3:#f9efe0;
-  --dark:#1a1208;--dark2:#2d2010;
-  --text:#3d2f1a;--text2:#6b5540;--text3:#9a8060;
+  --gold:#03301E;--gold2:#0a5c38;--gold3:#c8ddd4;
+  --cream:#F5F7F6;--cream2:#edf2ef;--cream3:#dce9e3;
+  --dark:#03301E;--dark2:#05472c;
+  --text:#03301E;--text2:#2a5c42;--text3:#5a8a72;
   --radius:16px;--radius-lg:24px;--radius-xl:32px;
-  --shadow:0 8px 32px rgba(180,130,50,0.10);
-  --shadow-lg:0 16px 56px rgba(180,130,50,0.18);
-  --shadow-card:0 4px 20px rgba(180,130,50,0.08);
+  --shadow:0 8px 32px rgba(3,48,30,0.10);
+  --shadow-lg:0 16px 56px rgba(3,48,30,0.18);
+  --shadow-card:0 4px 20px rgba(3,48,30,0.08);
 }
 
 /* ── NAV ── */
 nav{position:fixed;top:0;left:0;width:100%;z-index:1000;transition:all .4s ease;padding:10px 0;overflow:visible}
-nav.scrolled{background:rgba(255,253,249,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 2px 24px rgba(180,130,50,0.12);padding:10px 0}
+nav.scrolled{background:rgba(245,247,246,0.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 2px 24px rgba(3,48,30,0.12);padding:10px 0}
 .nav-inner{max-width:1200px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between}
 .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
-.nav-logo img{width:160px;height:60px;object-fit:contain;padding:4px 8px;filter:drop-shadow(0 2px 8px rgba(201,168,76,0.3));transition:transform .3s,filter .3s}
-.nav-logo img:hover{transform:scale(1.04);filter:drop-shadow(0 4px 14px rgba(201,168,76,0.5))}
-nav.scrolled .nav-logo img{width:160px;height:60px}
-.nav-logo-mark{width:36px;height:36px;background:linear-gradient(135deg,#c9a84c,#e8c97e);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:#fff;font-size:16px;letter-spacing:1px}
+.nav-logo img{width:180px;height:68px;object-fit:contain;padding:2px 4px;filter:none;transition:transform .3s,filter .3s}
+.nav-logo img:hover{transform:scale(1.04);filter:drop-shadow(0 4px 14px rgba(3,48,30,0.4))}
+nav.scrolled .nav-logo img{width:180px;height:68px}
+.nav-logo-mark{width:36px;height:36px;background:linear-gradient(135deg,#03301E,#0a5c38);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:#F5F7F6;font-size:16px;letter-spacing:1px}
 .nav-logo-text{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--dark);letter-spacing:.5px}
 .nav-logo-text span{color:var(--gold)}
 .nav-links{display:flex;align-items:center;gap:36px;list-style:none}
 .nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--text2);transition:color .25s;letter-spacing:.3px}
 .nav-links a:hover{color:var(--gold)}
-.nav-cta{background:linear-gradient(135deg,#c9a84c,#e8c97e);color:#fff!important;padding:10px 24px;border-radius:50px;font-weight:600!important;box-shadow:0 4px 16px rgba(201,168,76,0.35);transition:transform .2s,box-shadow .2s!important}
-.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,76,0.45)!important}
+.nav-cta{background:linear-gradient(135deg,#03301E,#0a5c38);color:#F5F7F6!important;padding:10px 24px;border-radius:50px;font-weight:600!important;box-shadow:0 4px 16px rgba(3,48,30,0.35);transition:transform .2s,box-shadow .2s!important}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(3,48,30,0.45)!important}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
 .hamburger span{width:24px;height:2px;background:var(--text);border-radius:2px;transition:all .3s}
-.mobile-menu{display:none;position:fixed;top:0;left:0;width:100%;height:100vh;background:rgba(255,253,249,0.98);backdrop-filter:blur(20px);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:32px}
+.mobile-menu{display:none;position:fixed;top:0;left:0;width:100%;height:100vh;background:rgba(245,247,246,0.98);backdrop-filter:blur(20px);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:32px}
 .mobile-menu.open{display:flex}
 .mobile-menu a{font-size:22px;font-family:'Playfair Display',serif;color:var(--dark);text-decoration:none;font-weight:700}
 .mobile-close{position:absolute;top:24px;right:28px;font-size:28px;cursor:pointer;color:var(--text2);background:none;border:none}
 
 /* ── HERO ── */
-.hero{min-height:100vh;background:linear-gradient(160deg,#fffdf9 0%,#fdf1d8 40%,#fcecc8 70%,#f9e0a8 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:100px 32px 60px}
-.hero-orb{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5}
-.hero-orb-1{width:500px;height:500px;background:radial-gradient(circle,#e8c97e55,transparent);top:-100px;right:-100px}
-.hero-orb-2{width:350px;height:350px;background:radial-gradient(circle,#f5c84233,transparent);bottom:-50px;left:-80px}
-.hero-orb-3{width:200px;height:200px;background:radial-gradient(circle,#c9a84c22,transparent);top:40%;left:30%}
+.hero{min-height:100vh;background:linear-gradient(160deg,#F5F7F6 0%,#e8f0ec 40%,#d4e6dc 70%,#c0dbd0 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:100px 32px 60px}
+.hero-orb{position:absolute;border-radius:50%;filter:blur(60px);opacity:.4}
+.hero-orb-1{width:500px;height:500px;background:radial-gradient(circle,rgba(10,92,56,0.25),transparent);top:-100px;right:-100px}
+.hero-orb-2{width:350px;height:350px;background:radial-gradient(circle,rgba(3,48,30,0.15),transparent);bottom:-50px;left:-80px}
+.hero-orb-3{width:200px;height:200px;background:radial-gradient(circle,rgba(10,92,56,0.12),transparent);top:40%;left:30%}
 .hero-inner{max-width:900px;text-align:center;position:relative;z-index:2}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.7);backdrop-filter:blur(12px);border:1px solid rgba(201,168,76,0.3);border-radius:50px;padding:8px 20px;margin-bottom:28px;font-size:13px;font-weight:500;color:var(--gold);letter-spacing:.8px;text-transform:uppercase;animation:fadeUp .8s ease both}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.75);backdrop-filter:blur(12px);border:1px solid rgba(3,48,30,0.25);border-radius:50px;padding:8px 20px;margin-bottom:28px;font-size:13px;font-weight:500;color:var(--gold);letter-spacing:.8px;text-transform:uppercase;animation:fadeUp .8s ease both}
 .hero-badge::before{content:'✦';font-size:10px}
 .hero-h1{font-family:'Playfair Display',serif;font-size:clamp(40px,7vw,80px);font-weight:700;line-height:1.1;color:var(--dark);margin-bottom:20px;animation:fadeUp .9s .1s ease both}
 .hero-h1 em{font-style:italic;color:var(--gold)}
 .hero-sub{font-size:clamp(15px,2vw,19px);color:var(--text2);line-height:1.7;max-width:600px;margin:0 auto 40px;font-weight:300;animation:fadeUp .9s .2s ease both}
 .hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;animation:fadeUp .9s .3s ease both}
-.btn-primary{background:linear-gradient(135deg,#c9a84c,#e8c97e);color:#fff;padding:16px 36px;border-radius:50px;font-weight:600;font-size:15px;text-decoration:none;box-shadow:0 8px 28px rgba(201,168,76,0.4);transition:transform .2s,box-shadow .2s;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
-.btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(201,168,76,0.55)}
-.btn-outline{background:rgba(255,255,255,0.7);backdrop-filter:blur(12px);color:var(--dark);padding:15px 36px;border-radius:50px;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid rgba(201,168,76,0.45);transition:all .2s;display:inline-flex;align-items:center;gap:8px;cursor:pointer}
-.btn-outline:hover{background:rgba(201,168,76,0.1);border-color:var(--gold);transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(135deg,#03301E,#0a5c38);color:#F5F7F6;padding:16px 36px;border-radius:50px;font-weight:600;font-size:15px;text-decoration:none;box-shadow:0 8px 28px rgba(3,48,30,0.35);transition:transform .2s,box-shadow .2s;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(3,48,30,0.5)}
+.btn-outline{background:rgba(255,255,255,0.75);backdrop-filter:blur(12px);color:var(--dark);padding:15px 36px;border-radius:50px;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid rgba(3,48,30,0.35);transition:all .2s;display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.btn-outline:hover{background:rgba(3,48,30,0.08);border-color:var(--gold);transform:translateY(-2px)}
 .hero-stats{display:flex;gap:48px;justify-content:center;margin-top:60px;flex-wrap:wrap;animation:fadeUp .9s .4s ease both}
 .hero-stat{text-align:center}
 .hero-stat-num{font-family:'Playfair Display',serif;font-size:36px;font-weight:700;color:var(--dark);line-height:1}
@@ -94,7 +94,7 @@ section{padding:96px 32px}
 .about-badge-pill .icon{font-size:22px;line-height:1}
 .about-badge-pill p{font-size:12px;font-weight:600;color:var(--dark);line-height:1.3}
 .vmv-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
-.vmv-card{background:rgba(255,255,255,0.8);backdrop-filter:blur(16px);border:1px solid rgba(201,168,76,0.15);border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-card);transition:transform .3s,box-shadow .3s;position:relative;overflow:hidden}
+.vmv-card{background:rgba(255,255,255,0.85);backdrop-filter:blur(16px);border:1px solid rgba(3,48,30,0.12);border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-card);transition:transform .3s,box-shadow .3s;position:relative;overflow:hidden}
 .vmv-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--gold),var(--gold2))}
 .vmv-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
 .vmv-icon{font-size:32px;margin-bottom:16px}
@@ -103,40 +103,40 @@ section{padding:96px 32px}
 
 /* ── SERVICES ── */
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
-.service-card{background:#fff;border-radius:var(--radius-lg);padding:36px 28px;box-shadow:var(--shadow-card);border:1px solid rgba(201,168,76,0.1);transition:all .35s cubic-bezier(.22,.68,0,1.2);cursor:default;position:relative;overflow:hidden}
-.service-card::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(201,168,76,0.05),transparent);opacity:0;transition:opacity .3s}
-.service-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:rgba(201,168,76,0.25)}
+.service-card{background:#F5F7F6;border-radius:var(--radius-lg);padding:36px 28px;box-shadow:var(--shadow-card);border:1px solid rgba(3,48,30,0.08);transition:all .35s cubic-bezier(.22,.68,0,1.2);cursor:default;position:relative;overflow:hidden}
+.service-card::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(3,48,30,0.04),transparent);opacity:0;transition:opacity .3s}
+.service-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:rgba(3,48,30,0.2)}
 .service-card:hover::after{opacity:1}
-.service-icon-wrap{width:64px;height:64px;background:linear-gradient(135deg,#f5e6b8,#e8c97e);border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:28px}
+.service-icon-wrap{width:64px;height:64px;background:linear-gradient(135deg,#c8ddd4,#0a5c38);border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:28px}
 .service-card h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--dark);margin-bottom:10px}
 .service-card>p{font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:20px}
 .service-tags{display:flex;flex-wrap:wrap;gap:8px}
-.tag{background:var(--cream3);color:var(--text2);font-size:12px;padding:5px 12px;border-radius:50px;font-weight:500;border:1px solid rgba(201,168,76,0.15)}
+.tag{background:var(--cream3);color:var(--text2);font-size:12px;padding:5px 12px;border-radius:50px;font-weight:500;border:1px solid rgba(3,48,30,0.12)}
 
 /* ── WHY US ── */
-.why{background:linear-gradient(160deg,#1a1208 0%,#2d2010 50%,#3d2a14 100%);color:#fff}
-.why .section-title{color:#fff}
-.why .section-sub{color:rgba(255,255,255,0.6)}
+.why{background:linear-gradient(160deg,#03301E 0%,#05472c 50%,#073d26 100%);color:#F5F7F6}
+.why .section-title{color:#F5F7F6}
+.why .section-sub{color:rgba(245,247,246,0.7)}
 .why .gold-divider{margin:20px auto}
 .counters{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin:56px 0}
-.counter-card{background:rgba(255,255,255,0.05);backdrop-filter:blur(12px);border:1px solid rgba(201,168,76,0.2);border-radius:var(--radius-lg);padding:32px;text-align:center}
-.counter-num{font-family:'Playfair Display',serif;font-size:48px;font-weight:700;color:var(--gold);line-height:1}
-.counter-plus{color:var(--gold2)}
-.counter-label{font-size:13px;color:rgba(255,255,255,0.6);margin-top:6px;text-transform:uppercase;letter-spacing:.8px}
+.counter-card{background:rgba(245,247,246,0.07);backdrop-filter:blur(12px);border:1px solid rgba(245,247,246,0.15);border-radius:var(--radius-lg);padding:32px;text-align:center}
+.counter-num{font-family:'Playfair Display',serif;font-size:48px;font-weight:700;color:#F5F7F6;line-height:1}
+.counter-plus{color:rgba(245,247,246,0.7)}
+.counter-label{font-size:13px;color:rgba(245,247,246,0.6);margin-top:6px;text-transform:uppercase;letter-spacing:.8px}
 .why-points{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.why-point{background:rgba(255,255,255,0.04);border:1px solid rgba(201,168,76,0.12);border-radius:var(--radius);padding:24px;transition:all .3s}
-.why-point:hover{background:rgba(201,168,76,0.08);border-color:rgba(201,168,76,0.3);transform:translateY(-4px)}
+.why-point{background:rgba(245,247,246,0.05);border:1px solid rgba(245,247,246,0.12);border-radius:var(--radius);padding:24px;transition:all .3s}
+.why-point:hover{background:rgba(245,247,246,0.1);border-color:rgba(245,247,246,0.25);transform:translateY(-4px)}
 .why-point-icon{font-size:24px;margin-bottom:12px}
-.why-point h4{font-size:15px;font-weight:600;color:#fff;margin-bottom:6px}
-.why-point p{font-size:13px;color:rgba(255,255,255,0.55);line-height:1.6}
+.why-point h4{font-size:15px;font-weight:600;color:#F5F7F6;margin-bottom:6px}
+.why-point p{font-size:13px;color:rgba(245,247,246,0.6);line-height:1.6}
 
 /* ── PORTFOLIO ── */
 .portfolio{background:var(--cream2)}
 .filter-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:36px 0}
-.filter-btn{padding:10px 24px;border-radius:50px;border:1.5px solid rgba(201,168,76,0.25);background:transparent;font-size:13px;font-weight:500;color:var(--text2);cursor:pointer;transition:all .25s}
-.filter-btn.active,.filter-btn:hover{background:linear-gradient(135deg,#c9a84c,#e8c97e);color:#fff;border-color:transparent;box-shadow:0 4px 16px rgba(201,168,76,0.35)}
+.filter-btn{padding:10px 24px;border-radius:50px;border:1.5px solid rgba(3,48,30,0.2);background:transparent;font-size:13px;font-weight:500;color:var(--text2);cursor:pointer;transition:all .25s}
+.filter-btn.active,.filter-btn:hover{background:linear-gradient(135deg,#03301E,#0a5c38);color:#F5F7F6;border-color:transparent;box-shadow:0 4px 16px rgba(3,48,30,0.3)}
 .portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.portfolio-item{border-radius:var(--radius-lg);overflow:hidden;position:relative;aspect-ratio:4/3;cursor:pointer;background:#1a1208}
+.portfolio-item{border-radius:var(--radius-lg);overflow:hidden;position:relative;aspect-ratio:4/3;cursor:pointer;background:#03301E}
 .portfolio-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.22,.68,0,1.2)}
 .portfolio-item:hover img{transform:scale(1.08)}
 .portfolio-item-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,18,8,0.88) 0%,rgba(26,18,8,0.25) 55%,transparent 100%);opacity:.55;transition:opacity .35s}
@@ -145,13 +145,13 @@ section{padding:96px 32px}
 .portfolio-item:hover .portfolio-item-label{transform:translateY(0);opacity:1}
 .portfolio-item-label h4{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;margin-bottom:4px}
 .portfolio-item-label span{font-size:12px;opacity:.75;text-transform:uppercase;letter-spacing:1px}
-.portfolio-tag-badge{position:absolute;top:16px;left:16px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#fff;background:rgba(201,168,76,0.85);padding:5px 14px;border-radius:50px;backdrop-filter:blur(8px)}
+.portfolio-tag-badge{position:absolute;top:16px;left:16px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#F5F7F6;background:rgba(3,48,30,0.85);padding:5px 14px;border-radius:50px;backdrop-filter:blur(8px)}
 
 /* ── PROCESS ── */
-.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:56px;position:relative}
-.process-steps::before{content:'';position:absolute;top:52px;left:12.5%;right:12.5%;height:2px;background:linear-gradient(to right,var(--gold),var(--gold2),var(--gold));z-index:0}
+.process-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:56px;position:relative}
+.process-steps::before{content:'';position:absolute;top:52px;left:10%;right:10%;height:2px;background:linear-gradient(to right,var(--gold),var(--gold2),var(--gold));z-index:0}
 .process-step{text-align:center;padding:0 16px;position:relative;z-index:1}
-.step-circle{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#c9a84c,#e8c97e);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:#fff;box-shadow:0 8px 24px rgba(201,168,76,0.35);position:relative;z-index:2;transition:transform .3s}
+.step-circle{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#03301E,#0a5c38);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:#F5F7F6;box-shadow:0 8px 24px rgba(3,48,30,0.3);position:relative;z-index:2;transition:transform .3s}
 .step-circle:hover{transform:scale(1.1)}
 .process-step h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--dark);margin-bottom:8px}
 .process-step p{font-size:13px;color:var(--text2);line-height:1.7}
@@ -159,21 +159,21 @@ section{padding:96px 32px}
 /* ── TESTIMONIALS ── */
 .testimonials{background:var(--cream2)}
 .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:52px}
-.testimonial-card{background:#fff;border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-card);border:1px solid rgba(201,168,76,0.1);transition:transform .3s,box-shadow .3s;position:relative}
+.testimonial-card{background:#F5F7F6;border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-card);border:1px solid rgba(3,48,30,0.08);transition:transform .3s,box-shadow .3s;position:relative}
 .testimonial-card::before{content:'"';font-family:'Playfair Display',serif;font-size:80px;color:var(--gold3);position:absolute;top:-10px;left:24px;line-height:1;font-weight:700}
 .testimonial-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
 .stars{color:var(--gold);font-size:14px;letter-spacing:2px;margin-bottom:16px;display:flex;gap:3px}
 .testimonial-card p{font-size:15px;color:var(--text);line-height:1.8;margin-bottom:20px;font-style:italic;padding-top:8px}
 .testimonial-author{display:flex;align-items:center;gap:12px}
-.author-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#c9a84c,#e8c97e);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;color:#fff}
+.author-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#03301E,#0a5c38);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;color:#F5F7F6}
 .author-info strong{font-size:14px;font-weight:600;color:var(--dark);display:block}
 .author-info span{font-size:12px;color:var(--text3)}
 
 /* ── TEAM ── */
 .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:52px}
-.team-card{background:#fff;border-radius:var(--radius-lg);padding:28px 20px;text-align:center;box-shadow:var(--shadow-card);border:1px solid rgba(201,168,76,0.08);transition:all .3s}
+.team-card{background:#F5F7F6;border-radius:var(--radius-lg);padding:28px 20px;text-align:center;box-shadow:var(--shadow-card);border:1px solid rgba(3,48,30,0.06);transition:all .3s}
 .team-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
-.team-avatar{width:90px;height:90px;border-radius:50%;margin:0 auto 16px;border:3px solid var(--gold3);display:flex;align-items:center;justify-content:center;font-size:36px;background:linear-gradient(135deg,#f5e6b8,#e8c97e)}
+.team-avatar{width:90px;height:90px;border-radius:50%;margin:0 auto 16px;border:3px solid var(--gold3);display:flex;align-items:center;justify-content:center;font-size:36px;background:linear-gradient(135deg,#c8ddd4,#0a5c38)}
 .team-card h4{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--dark);margin-bottom:4px}
 .team-card .role{font-size:12px;color:var(--gold);font-weight:600;text-transform:uppercase;letter-spacing:.8px;margin-bottom:10px}
 .team-card p{font-size:13px;color:var(--text2);line-height:1.6}
@@ -182,48 +182,48 @@ section{padding:96px 32px}
 .cta-section{position:relative;text-align:center;padding:80px 32px;overflow:hidden}
 .cta-bg{position:absolute;inset:0;z-index:0}
 .cta-bg img{width:100%;height:100%;object-fit:cover;display:block}
-.cta-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(201,168,76,0.88) 0%,rgba(232,201,126,0.82) 50%,rgba(201,168,76,0.90) 100%)}
+.cta-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(3,48,30,0.90) 0%,rgba(5,71,44,0.85) 50%,rgba(3,48,30,0.92) 100%)}
 .cta-section .container{position:relative;z-index:1}
 .cta-section h2{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,48px);font-weight:700;color:#fff;margin-bottom:14px}
 .cta-section p{font-size:18px;color:rgba(255,255,255,0.9);margin-bottom:36px}
-.btn-white{background:#fff;color:var(--gold);padding:16px 40px;border-radius:50px;font-weight:700;font-size:15px;text-decoration:none;box-shadow:0 8px 28px rgba(0,0,0,0.15);transition:all .25s;display:inline-block}
-.btn-white:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(0,0,0,0.2)}
+.btn-white{background:#F5F7F6;color:var(--gold);padding:16px 40px;border-radius:50px;font-weight:700;font-size:15px;text-decoration:none;box-shadow:0 8px 28px rgba(0,0,0,0.2);transition:all .25s;display:inline-block}
+.btn-white:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(0,0,0,0.3)}
 
 /* ── CONTACT ── */
 .contact{background:var(--cream2)}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:56px}
 .contact-info{display:flex;flex-direction:column;gap:20px}
-.contact-item{display:flex;align-items:flex-start;gap:16px;background:#fff;border-radius:var(--radius);padding:20px;box-shadow:var(--shadow-card);border:1px solid rgba(201,168,76,0.08)}
-.contact-item-icon{width:44px;height:44px;min-width:44px;background:linear-gradient(135deg,#f5e6b8,#e8c97e);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px}
+.contact-item{display:flex;align-items:flex-start;gap:16px;background:#F5F7F6;border-radius:var(--radius);padding:20px;box-shadow:var(--shadow-card);border:1px solid rgba(3,48,30,0.06)}
+.contact-item-icon{width:44px;height:44px;min-width:44px;background:linear-gradient(135deg,#c8ddd4,#0a5c38);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px}
 .contact-item-text strong{font-size:14px;font-weight:600;color:var(--dark);display:block;margin-bottom:2px}
 .contact-item-text span{font-size:13px;color:var(--text2)}
-.contact-form{background:#fff;border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow-card);border:1px solid rgba(201,168,76,0.1)}
+.contact-form{background:#F5F7F6;border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow-card);border:1px solid rgba(3,48,30,0.08)}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .form-group{margin-bottom:16px;display:flex;flex-direction:column;gap:6px}
 .form-group label{font-size:13px;font-weight:600;color:var(--dark)}
-.form-group input,.form-group select,.form-group textarea{border:1.5px solid rgba(201,168,76,0.2);border-radius:10px;padding:12px 16px;font-size:14px;font-family:'Poppins',sans-serif;color:var(--text);background:#fff;outline:none;transition:border-color .2s;resize:none}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,0.1)}
+.form-group input,.form-group select,.form-group textarea{border:1.5px solid rgba(3,48,30,0.18);border-radius:10px;padding:12px 16px;font-size:14px;font-family:'Poppins',sans-serif;color:var(--text);background:#fff;outline:none;transition:border-color .2s;resize:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(3,48,30,0.08)}
 .form-group textarea{height:110px}
 
 /* ── FOOTER ── */
-footer{background:var(--dark);color:rgba(255,255,255,0.8);padding:64px 32px 28px}
+footer{background:var(--dark);color:rgba(245,247,246,0.8);padding:64px 32px 28px}
 .footer-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
 .footer-brand .logo-wrap{display:flex;align-items:center;gap:10px;margin-bottom:16px}
-.footer-logo-mark{width:36px;height:36px;background:linear-gradient(135deg,#c9a84c,#e8c97e);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:#fff;font-size:16px}
-.footer-brand .logo-name{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#fff}
-.footer-brand .logo-name span{color:var(--gold)}
-.footer-brand p{font-size:13px;color:rgba(255,255,255,0.5);line-height:1.8;margin-bottom:20px}
+.footer-logo-mark{width:36px;height:36px;background:linear-gradient(135deg,#0a5c38,#c8ddd4);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:#F5F7F6;font-size:16px}
+.footer-brand .logo-name{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#F5F7F6}
+.footer-brand .logo-name span{color:var(--gold2)}
+.footer-brand p{font-size:13px;color:rgba(245,247,246,0.5);line-height:1.8;margin-bottom:20px}
 .footer-social{display:flex;gap:12px}
-.social-btn{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,0.07);display:flex;align-items:center;justify-content:center;font-size:15px;cursor:pointer;transition:all .25s;border:1px solid rgba(255,255,255,0.1);text-decoration:none;color:inherit}
-.social-btn:hover{background:rgba(201,168,76,0.2);border-color:rgba(201,168,76,0.3)}
-footer h5{font-size:14px;font-weight:700;color:#fff;margin-bottom:16px;letter-spacing:.5px;text-transform:uppercase}
+.social-btn{width:36px;height:36px;border-radius:10px;background:rgba(245,247,246,0.07);display:flex;align-items:center;justify-content:center;font-size:15px;cursor:pointer;transition:all .25s;border:1px solid rgba(245,247,246,0.1);text-decoration:none;color:inherit}
+.social-btn:hover{background:rgba(245,247,246,0.15);border-color:rgba(245,247,246,0.25)}
+footer h5{font-size:14px;font-weight:700;color:#F5F7F6;margin-bottom:16px;letter-spacing:.5px;text-transform:uppercase}
 footer ul{list-style:none}
 footer ul li{margin-bottom:10px}
-footer ul li a{font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;transition:color .2s}
-footer ul li a:hover{color:var(--gold)}
-.footer-bottom{max-width:1200px;margin:0 auto;padding-top:24px;border-top:1px solid rgba(255,255,255,0.08);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.footer-bottom p{font-size:12px;color:rgba(255,255,255,0.35)}
-.footer-bottom span{font-size:12px;color:var(--gold);font-weight:500}
+footer ul li a{font-size:13px;color:rgba(245,247,246,0.5);text-decoration:none;transition:color .2s}
+footer ul li a:hover{color:#F5F7F6}
+.footer-bottom{max-width:1200px;margin:0 auto;padding-top:24px;border-top:1px solid rgba(245,247,246,0.1);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:12px;color:rgba(245,247,246,0.35)}
+.footer-bottom span{font-size:12px;color:rgba(245,247,246,0.6);font-weight:500}
 
 /* ── ANIMATIONS ── */
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
@@ -235,7 +235,7 @@ footer ul li a:hover{color:var(--gold)}
 @media(max-width:1024px){
   .services-grid,.vmv-cards,.counters{grid-template-columns:repeat(2,1fr)}
   .why-points,.team-grid{grid-template-columns:repeat(2,1fr)}
-  .process-steps{grid-template-columns:repeat(2,1fr);gap:32px}
+  .process-steps{grid-template-columns:repeat(3,1fr);gap:32px}
   .process-steps::before{display:none}
   .footer-grid{grid-template-columns:1fr 1fr}
   .about-grid{grid-template-columns:1fr}
@@ -285,14 +285,14 @@ footer ul li a:hover{color:var(--gold)}
 <nav id="navbar">
   <div class="nav-inner">
     <a class="nav-logo" href="#">
-      <img src="logo.png" alt="Events Forever Logo">
+      <img src="logo.png" alt="Humble Hosts Logo">
     </a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#contact" class="nav-cta">Get Quote</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#contact" class="nav-cta">Book a Consultation</a></li>
     </ul>
     <button class="hamburger" onclick="document.querySelector('.mobile-menu').classList.add('open')" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -305,8 +305,8 @@ footer ul li a:hover{color:var(--gold)}
   <button class="mobile-close" onclick="document.querySelector('.mobile-menu').classList.remove('open')">✕</button>
   <a href="#about" onclick="document.querySelector('.mobile-menu').classList.remove('open')">About</a>
   <a href="#services" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Services</a>
-  <a href="#portfolio" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Portfolio</a>
-  <a href="#team" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Team</a>
+  <a href="#expertise" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Expertise</a>
+  <a href="#process" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Process</a>
   <a href="#contact" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Contact</a>
 </div>
 
@@ -316,18 +316,17 @@ footer ul li a:hover{color:var(--gold)}
   <div class="hero-orb hero-orb-2"></div>
   <div class="hero-orb hero-orb-3"></div>
   <div class="hero-inner">
-    <div class="hero-badge">✦ Premium Event Management</div>
-    <h1 class="hero-h1">We Create <em>Unforgettable</em><br>Events</h1>
-    <p class="hero-sub">End-to-end integrated solutions for Events, Facilities, and Food Court Management. From grand corporate galas to intimate celebrations — we make every moment extraordinary.</p>
+    <div class="hero-badge">✦ Hospitality Consultancy · Est. 2017</div>
+    <h1 class="hero-h1">Elevating Hospitality with<br><em>Humble Excellence</em></h1>
+    <p class="hero-sub">We don't just consult — we create hospitality experiences that define brands. One partner. Complete transformation.</p>
     <div class="hero-btns">
-      <a href="#contact" class="btn-primary">✦ Get Quote</a>
-      <a href="#services" class="btn-outline">View Services →</a>
+      <a href="#contact" class="btn-primary">✦ Book a Consultation</a>
+      <a href="#services" class="btn-outline">Explore Services →</a>
     </div>
     <div class="hero-stats">
-      <div class="hero-stat"><div class="hero-stat-num" data-target="500"><span>500</span>+</div><div class="hero-stat-label">Events Delivered</div></div>
-      <div class="hero-stat"><div class="hero-stat-num" data-target="150"><span>150</span>+</div><div class="hero-stat-label">Happy Clients</div></div>
-      <div class="hero-stat"><div class="hero-stat-num" data-target="12"><span>12</span>+</div><div class="hero-stat-label">Years Experience</div></div>
-      <div class="hero-stat"><div class="hero-stat-num" data-target="98"><span>98</span>%</div><div class="hero-stat-label">Satisfaction Rate</div></div>
+      <div class="hero-stat"><div class="hero-stat-num" data-target="8"><span>8</span>+</div><div class="hero-stat-label">Years of Excellence</div></div>
+      <div class="hero-stat"><div class="hero-stat-num" data-target="8"><span>8</span></div><div class="hero-stat-label">Luxury Brands</div></div>
+      <div class="hero-stat"><div class="hero-stat-num"><span>360°</span></div><div class="hero-stat-label">Consulting Approach</div></div>
     </div>
   </div>
   <div class="hero-scroll">
@@ -341,42 +340,43 @@ footer ul li a:hover{color:var(--gold)}
   <div class="container">
     <div style="display:flex;gap:56px;align-items:flex-start;flex-wrap:wrap">
       <div style="flex:1;min-width:260px">
-        <div class="section-badge">About Us</div>
-        <h2 class="section-title reveal">Your Trusted <br>Event Partner</h2>
+        <div class="section-badge">Who We Are</div>
+        <h2 class="section-title reveal">A Premier Hospitality<br>Consultancy</h2>
         <div class="gold-divider"></div>
         <div class="about-text reveal">
-          <p>Events Forever is a premier integrated solutions partner specializing in Events, Facilities, and Food Court Management. With over a decade of industry leadership, we blend creative vision with operational precision to deliver high-impact results.</p>
-          <p>From large-scale government ceremonies to exclusive corporate engagements, our multi-disciplinary team is dedicated to flawless execution and white-glove service. At Events Forever, we don't just manage logistics—we curate exceptional experiences and lasting legacies.</p>
+          <p>Humble Hosts is a premier hospitality consultancy specializing in transforming hotels and restaurants into high-performing, profitable, and distinguished brands. We combine operational expertise, strategic insight, and luxury hospitality standards to deliver measurable impact.</p>
+          <p><em>"We don't just consult — we create hospitality experiences that define brands."</em></p>
+          <p>Founded in 2017, we have built a strong reputation across boutique properties and large-scale hospitality businesses — delivering proven operational and financial impact at every level.</p>
         </div>
       </div>
       <div style="flex:1;min-width:260px" class="reveal">
         <div class="about-img-box">
-          <img src="lawn.jpeg" alt="Events Forever event setup">
+          <img src="1.jpeg" alt="Humble Hosts hospitality consultancy">
           <div class="about-img-overlay"></div>
           <div class="about-img-badges">
-            <div class="about-badge-pill"><div class="icon">🎭</div><p>Event Design</p></div>
-            <div class="about-badge-pill"><div class="icon">🏛️</div><p>Facility Mgmt</p></div>
-            <div class="about-badge-pill"><div class="icon">🍽️</div><p>Catering</p></div>
-            <div class="about-badge-pill"><div class="icon">🎯</div><p>Precision</p></div>
+            <div class="about-badge-pill"><div class="icon">🔄</div><p>End-to-End Solutions</p></div>
+            <div class="about-badge-pill"><div class="icon">🏆</div><p>Luxury Brand Standards</p></div>
+            <div class="about-badge-pill"><div class="icon">🎯</div><p>Measurable Impact</p></div>
+            <div class="about-badge-pill"><div class="icon">📍</div><p>Dehradun, India · 2017</p></div>
           </div>
         </div>
       </div>
     </div>
     <div class="vmv-cards reveal">
       <div class="vmv-card">
-        <div class="vmv-icon">🔭</div>
-        <h3>Our Vision</h3>
-        <p>To define the future of integrated events by delivering unparalleled experiences where visionary concepts meet absolute perfection.</p>
+        <div class="vmv-icon">🔄</div>
+        <h3>Approach</h3>
+        <p>End-to-End Solutions — we cover every dimension of your hospitality business under one roof, from operations to digital growth.</p>
       </div>
       <div class="vmv-card">
-        <div class="vmv-icon">🎯</div>
-        <h3>Our Mission</h3>
-        <p>Redefining hospitality by delivering bespoke event and facility solutions. We combine cutting-edge innovation with uncompromising integrity to ensure every detail reflects our standard of excellence.</p>
+        <div class="vmv-icon">🏆</div>
+        <h3>Expertise</h3>
+        <p>Luxury Brand Standards — direct experience from The Oberoi, Hilton, ITC, and other globally recognized names gives us unmatched standards.</p>
       </div>
       <div class="vmv-card">
-        <div class="vmv-icon">💎</div>
-        <h3>Our Values</h3>
-        <p>At the intersection of meticulous precision and boundless creativity, you'll find our heart. We believe every event is a milestone in a life well-lived—which is why we handle your vision with complete transparency and the same care we would our own.</p>
+        <div class="vmv-icon">📈</div>
+        <h3>Focus</h3>
+        <p>Measurable Impact — our financial frameworks and operational systems consistently deliver tangible results and improved profitability for clients.</p>
       </div>
     </div>
   </div>
@@ -387,159 +387,193 @@ footer ul li a:hover{color:var(--gold)}
   <div class="container">
     <div class="text-center">
       <div class="section-badge">What We Do</div>
-      <h2 class="section-title reveal">Integrated Services,<br>Exceptional Results</h2>
+      <h2 class="section-title reveal">Our Core Services</h2>
       <div class="gold-divider"></div>
-      <p class="section-sub reveal">From grand events to daily facility operations — one partner, endless possibilities.</p>
+      <p class="section-sub reveal">We provide end-to-end hospitality transformation solutions — from operations and finance to talent, technology, and digital growth. One partner for complete transformation.</p>
     </div>
     <div class="services-grid">
       <div class="service-card reveal">
-        <div class="service-icon-wrap">🎪</div>
-        <h3>Event Management</h3>
-        <p>Comprehensive event planning and execution for all scales and sectors, with meticulous attention to detail.</p>
+        <div class="service-icon-wrap">⚙️</div>
+        <h3>Operational Excellence</h3>
+        <p>Streamline your operations with precision systems that drive efficiency and consistency.</p>
         <div class="service-tags">
-          <span class="tag">Corporate MICE</span>
-          <span class="tag">Product Launches</span>
-          <span class="tag">Annual Days</span>
-          <span class="tag">Weddings</span>
-          <span class="tag">Themed Parties</span>
-          <span class="tag">Govt. Ceremonies</span>
+          <span class="tag">Standard Operating Procedures</span>
+          <span class="tag">Operations Audits</span>
+          <span class="tag">Efficiency Systems & Workflows</span>
         </div>
       </div>
       <div class="service-card reveal">
-        <div class="service-icon-wrap">🏢</div>
-        <h3>Facility Management</h3>
-        <p>Professional facility operations ensuring your spaces are maintained, functional, and world-class at all times.</p>
+        <div class="service-icon-wrap">📊</div>
+        <h3>Financial Optimization</h3>
+        <p>Maximize profitability through intelligent cost control and strategic financial planning.</p>
         <div class="service-tags">
-          <span class="tag">Housekeeping</span>
-          <span class="tag">Technical Maintenance</span>
-          <span class="tag">Manpower Supply</span>
-          <span class="tag">Security Services</span>
-          <span class="tag">Landscaping</span>
+          <span class="tag">Cost Control & Reduction</span>
+          <span class="tag">Budgeting & Forecasting</span>
+          <span class="tag">Profit Maximization Strategies</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon-wrap">🏨</div>
+        <h3>Pre-Opening Support</h3>
+        <p>From concept to launch — complete execution support for new hospitality ventures.</p>
+        <div class="service-tags">
+          <span class="tag">Concept Development</span>
+          <span class="tag">Launch Execution Planning</span>
+          <span class="tag">Systems Setup & Staff Readiness</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon-wrap">👔</div>
+        <h3>Talent Acquisition & HR</h3>
+        <p>We don't just hire — we build winning teams with proven recruitment frameworks.</p>
+        <div class="service-tags">
+          <span class="tag">End-to-End Recruitment</span>
+          <span class="tag">All-Level Interviewing</span>
+          <span class="tag">Policies, Training & Retention</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon-wrap">📈</div>
+        <h3>Sales & Revenue Growth</h3>
+        <p>Visibility creates value. We architect strategies that drive sustainable revenue growth.</p>
+        <div class="service-tags">
+          <span class="tag">Brand Positioning</span>
+          <span class="tag">Revenue Management</span>
+          <span class="tag">Distribution Channel Optimization</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon-wrap">💻</div>
+        <h3>Digital & Creative Solutions</h3>
+        <p>From physical experience to digital presence — we elevate it all with elite partners.</p>
+        <div class="service-tags">
+          <span class="tag">Branding & Graphic Design</span>
+          <span class="tag">Website & App Development</span>
+          <span class="tag">Social Media & Digital Marketing</span>
         </div>
       </div>
       <div class="service-card reveal">
         <div class="service-icon-wrap">🍽️</div>
-        <h3>Food Court & Catering</h3>
-        <p>Premium culinary experiences ranging from corporate cafeterias to large-scale mass catering operations.</p>
+        <h3>Culinary & Experience Design</h3>
+        <p>Every detail contributes to the guest experience — from menu to kitchen workflow.</p>
         <div class="service-tags">
-          <span class="tag">Corporate Cafeterias</span>
-          <span class="tag">Multi-Brand Courts</span>
-          <span class="tag">Mass Catering</span>
-          <span class="tag">Live Counters</span>
-          <span class="tag">Custom Menus</span>
+          <span class="tag">Menu Engineering</span>
+          <span class="tag">Kitchen Workflow Optimization</span>
+          <span class="tag">Food Cost Control Systems</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon-wrap">🏛️</div>
+        <h3>HR & Compliance</h3>
+        <p>Build a compliant, culture-driven organization that retains top hospitality talent.</p>
+        <div class="service-tags">
+          <span class="tag">Policy Development</span>
+          <span class="tag">Staff Training Programs</span>
+          <span class="tag">Compliance & Retention Systems</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon-wrap">🌐</div>
+        <h3>Long-Term Partnerships</h3>
+        <p>We partner with you not just to grow, but to lead — building sustainable hospitality businesses.</p>
+        <div class="service-tags">
+          <span class="tag">Consulting Retainers</span>
+          <span class="tag">Operational Partnerships</span>
+          <span class="tag">Ongoing Performance Monitoring</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- IMAGE STRIP -->
-<div class="img-strip-grid" style="display:grid;grid-template-columns:repeat(4,1fr);height:220px;overflow:hidden">
-  <div style="overflow:hidden"><img src="gettogether.webp" alt="Get together event" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s" onmouseover="this.style.transform='scale(1.07)'" onmouseout="this.style.transform='scale(1)'"></div>
-  <div style="overflow:hidden"><img src="openparty.png" alt="Open party event" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s" onmouseover="this.style.transform='scale(1.07)'" onmouseout="this.style.transform='scale(1)'"></div>
-  <div style="overflow:hidden"><img src="stage.png" alt="Stage event" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s" onmouseover="this.style.transform='scale(1.07)'" onmouseout="this.style.transform='scale(1)'"></div>
-  <div style="overflow:hidden"><img src="party.png" alt="Party event" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s" onmouseover="this.style.transform='scale(1.07)'" onmouseout="this.style.transform='scale(1)'"></div>
+<!-- EXPERTISE TICKER -->
+<div id="expertise" style="background:var(--dark);padding:40px 0;overflow:hidden;position:relative">
+  <div style="text-align:center;margin-bottom:20px">
+    <span style="font-size:12px;font-weight:600;color:rgba(245,247,246,0.5);letter-spacing:2px;text-transform:uppercase">Our Credentials · Global Standards. Personalized Execution.</span>
+  </div>
+  <div style="font-size:13px;font-weight:600;color:rgba(245,247,246,0.5);text-align:center;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px">LEADERSHIP EXPERIENCE FROM GLOBALLY RECOGNIZED BRANDS</div>
+  <div style="display:flex;gap:48px;justify-content:center;flex-wrap:wrap;padding:0 32px">
+    <span style="color:#F5F7F6;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">The Oberoi</span>
+    <span style="color:rgba(245,247,246,0.4)">✦</span>
+    <span style="color:#F5F7F6;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">ITC Luxury Collection Hotels</span>
+    <span style="color:rgba(245,247,246,0.4)">✦</span>
+    <span style="color:#F5F7F6;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">Reliance Industries</span>
+    <span style="color:rgba(245,247,246,0.4)">✦</span>
+    <span style="color:#F5F7F6;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">Sodexo</span>
+    <span style="color:rgba(245,247,246,0.4)">✦</span>
+    <span style="color:#F5F7F6;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">Radisson</span>
+    <span style="color:rgba(245,247,246,0.4)">✦</span>
+    <span style="color:#F5F7F6;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">Hilton</span>
+    <span style="color:rgba(245,247,246,0.4)">✦</span>
+    <span style="color:#F5F7F6;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">The Park Hotels</span>
+    <span style="color:rgba(245,247,246,0.4)">✦</span>
+    <span style="color:#F5F7F6;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">Vantara Niwas</span>
+  </div>
+  <div style="text-align:center;margin-top:28px;padding:0 32px">
+    <p style="font-family:'Playfair Display',serif;font-size:18px;font-style:italic;color:rgba(245,247,246,0.85)">"Excellence is not a promise — it is our standard."</p>
+    <p style="font-size:13px;color:rgba(245,247,246,0.45);margin-top:8px">Bespoke strategies. Strong execution. Innovative yet practical solutions.</p>
+  </div>
 </div>
 
 <!-- WHY CHOOSE US -->
 <section class="why" id="why">
   <div class="container">
     <div class="text-center">
-      <div class="section-badge" style="color:var(--gold2)">Why Choose Us</div>
-      <h2 class="section-title reveal">The Events Forever <br>Difference</h2>
+      <div class="section-badge" style="color:#a8d5be;border-color:rgba(168,213,190,0.3)">Why Choose Us</div>
+      <h2 class="section-title reveal">Why Clients Trust Us</h2>
       <div class="gold-divider"></div>
-      <p class="section-sub reveal">Trusted by corporates, governments, and families — we deliver where it matters most.</p>
+      <p class="section-sub reveal">Crafting Excellence Since 2017 — strong systems, profitable operations, exceptional guest experiences.</p>
     </div>
     <div class="counters reveal">
       <div class="counter-card">
-        <div class="counter-num"><span class="count" data-target="500">0</span><span class="counter-plus">+</span></div>
-        <div class="counter-label">Events Executed</div>
-      </div>
-      <div class="counter-card">
-        <div class="counter-num"><span class="count" data-target="50">0</span><span class="counter-plus">+</span></div>
-        <div class="counter-label">Vendor Partners</div>
-      </div>
-      <div class="counter-card">
-        <div class="counter-num"><span class="count" data-target="12">0</span><span class="counter-plus">+</span></div>
+        <div class="counter-num"><span class="count" data-target="8">0</span><span class="counter-plus">+</span></div>
         <div class="counter-label">Years of Excellence</div>
       </div>
       <div class="counter-card">
-        <div class="counter-num"><span class="count" data-target="98">0</span><span class="counter-plus">%</span></div>
-        <div class="counter-label">Client Satisfaction</div>
+        <div class="counter-num"><span class="count" data-target="8">0</span></div>
+        <div class="counter-label">Luxury Brands</div>
+      </div>
+      <div class="counter-card">
+        <div class="counter-num">360<span class="counter-plus">°</span></div>
+        <div class="counter-label">Consulting Approach</div>
+      </div>
+      <div class="counter-card">
+        <div class="counter-num"><span class="count" data-target="2017">0</span></div>
+        <div class="counter-label">Founded</div>
       </div>
     </div>
     <div class="why-points reveal">
       <div class="why-point">
-        <div class="why-point-icon">⚡</div>
-        <h4>End-to-End Execution</h4>
-        <p>From first concept to final delivery — we handle every detail so you don't have to.</p>
-      </div>
-      <div class="why-point">
-        <div class="why-point-icon">🌐</div>
-        <h4>Vast Vendor Network</h4>
-        <p>Over 50 trusted vendor partnerships ensuring the best quality at competitive rates.</p>
-      </div>
-      <div class="why-point">
         <div class="why-point-icon">🏆</div>
-        <h4>Multi-Sector Expertise</h4>
-        <p>Deep experience across corporate, social, and government sectors with tailored solutions.</p>
+        <h4>Luxury Brand Expertise</h4>
+        <p>Direct experience from The Oberoi, Hilton, ITC, and other globally recognized names gives us unmatched standards.</p>
       </div>
       <div class="why-point">
-        <div class="why-point-icon">🛡️</div>
-        <h4>100% Reliability</h4>
-        <p>Proven track record with zero event failures. Your event is our reputation.</p>
+        <div class="why-point-icon">🔄</div>
+        <h4>End-to-End Solutions</h4>
+        <p>Operations, HR, digital, culinary — we cover every dimension of your hospitality business under one roof.</p>
+      </div>
+      <div class="why-point">
+        <div class="why-point-icon">💰</div>
+        <h4>Proven Cost Optimization</h4>
+        <p>Our financial frameworks have consistently delivered measurable savings and improved profitability for clients.</p>
+      </div>
+      <div class="why-point">
+        <div class="why-point-icon">🎯</div>
+        <h4>Tailored Consulting Approach</h4>
+        <p>No two hotels are alike. Every engagement is crafted specifically for your brand, market, and ambitions.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PORTFOLIO -->
-<section class="portfolio" id="portfolio">
+<!-- MID CTA -->
+<section class="cta-section" style="padding:72px 32px">
+  <div class="cta-bg"><img src="2.jpeg" alt="Hospitality excellence"></div>
   <div class="container">
-    <div class="text-center">
-      <div class="section-badge">Our Work</div>
-      <h2 class="section-title reveal">Events That Tell <br>Our Story</h2>
-      <div class="gold-divider"></div>
-    </div>
-    <div class="filter-btns reveal">
-      <button class="filter-btn active" onclick="filterPortfolio('all',this)">All Events</button>
-      <button class="filter-btn" onclick="filterPortfolio('corporate',this)">Corporate</button>
-      <button class="filter-btn" onclick="filterPortfolio('wedding',this)">Weddings</button>
-      <button class="filter-btn" onclick="filterPortfolio('party',this)">Party</button>
-    </div>
-    <div class="portfolio-grid reveal" id="portfolioGrid">
-      <div class="portfolio-item" data-cat="corporate">
-        <img src="corporate.png" alt="Annual Leadership Summit">
-        <div class="portfolio-tag-badge">Corporate</div>
-        <div class="portfolio-item-overlay"></div>
-        <div class="portfolio-item-label"><h4>Annual Leadership Summit</h4><span>Corporate · 2024</span></div>
-      </div>
-      <div class="portfolio-item" data-cat="wedding">
-        <img src="marriage.jpeg" alt="Royal Garden Wedding">
-        <div class="portfolio-tag-badge">Wedding</div>
-        <div class="portfolio-item-overlay"></div>
-        <div class="portfolio-item-label"><h4>Royal Garden Wedding</h4><span>Social · 2024</span></div>
-      </div>
-
-      <div class="portfolio-item" data-cat="corporate">
-        <img src="stage.png" alt="Tech Product Launch">
-        <div class="portfolio-tag-badge">Corporate</div>
-        <div class="portfolio-item-overlay"></div>
-        <div class="portfolio-item-label"><h4>Tech Product Launch</h4><span>Corporate · 2023</span></div>
-      </div>
-      <div class="portfolio-item" data-cat="wedding">
-        <img src="gettogether.webp" alt="Floral Themed Sangeet">
-        <div class="portfolio-tag-badge">Wedding</div>
-        <div class="portfolio-item-overlay"></div>
-        <div class="portfolio-item-label"><h4>Floral Themed Sangeet</h4><span>Social · 2023</span></div>
-      </div>
-      <div class="portfolio-item" data-cat="party">
-        <img src="openparty.png" alt="Cultural Festival 2023">
-        <div class="portfolio-tag-badge">Party</div>
-        <div class="portfolio-item-overlay"></div>
-        <div class="portfolio-item-label"><h4>Cultural Festival 2023</h4><span>Party · 2023</span></div>
-      </div>
-    </div>
+    <h2 class="reveal">"We partner with you not just to grow, but to lead."</h2>
+    <p class="reveal">Strong systems. Profitable operations. Exceptional guest experiences. That is our promise — and our standard of delivery.</p>
+    <a href="#contact" class="btn-white reveal">Start the Conversation →</a>
   </div>
 </section>
 
@@ -548,30 +582,35 @@ footer ul li a:hover{color:var(--gold)}
   <div class="container">
     <div class="text-center">
       <div class="section-badge">How We Work</div>
-      <h2 class="section-title reveal">Our Process</h2>
+      <h2 class="section-title reveal">Our Proven Process</h2>
       <div class="gold-divider"></div>
-      <p class="section-sub reveal">A seamless journey from your first call to a flawless final delivery.</p>
+      <p class="section-sub reveal">A structured, results-driven journey from discovery to long-term partnership.</p>
     </div>
-    <div class="process-steps reveal">
+    <div class="process-steps reveal" style="grid-template-columns:repeat(5,1fr)">
       <div class="process-step">
         <div class="step-circle">1</div>
-        <h3>Consultation</h3>
-        <p>We understand your vision, requirements, and expectations in detail.</p>
+        <h3>Discovery</h3>
+        <p>Deep-dive audit of your current operations, brand positioning, and financial performance.</p>
       </div>
       <div class="process-step">
         <div class="step-circle">2</div>
-        <h3>Planning</h3>
-        <p>A comprehensive event blueprint covering every element and timeline.</p>
+        <h3>Strategy</h3>
+        <p>Tailored consulting strategy designed around your specific goals and market context.</p>
       </div>
       <div class="process-step">
         <div class="step-circle">3</div>
         <h3>Execution</h3>
-        <p>On-ground teams coordinate every detail for flawless delivery.</p>
+        <p>Hands-on implementation with our team embedded alongside yours for real impact.</p>
       </div>
       <div class="process-step">
         <div class="step-circle">4</div>
-        <h3>Delivery</h3>
-        <p>Final walkthrough, wrap-up, and post-event review for perfection.</p>
+        <h3>Optimization</h3>
+        <p>Continuous refinement of systems, teams, and revenue channels for compounding results.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">5</div>
+        <h3>Partnership</h3>
+        <p>Long-term relationship — we stay with you to protect and grow what we've built together.</p>
       </div>
     </div>
   </div>
@@ -581,83 +620,55 @@ footer ul li a:hover{color:var(--gold)}
 <section class="testimonials" id="testimonials">
   <div class="container">
     <div class="text-center">
-      <div class="section-badge">Client Stories</div>
-      <h2 class="section-title reveal">Words From Our <br>Clients</h2>
+      <div class="section-badge">Client Voices</div>
+      <h2 class="section-title reveal">What Our Clients Say</h2>
       <div class="gold-divider"></div>
     </div>
     <div class="testimonials-grid reveal">
       <div class="testimonial-card">
         <div class="stars">★★★★★</div>
-        <p>Events Forever turned our annual conference into a world-class experience. Every detail was perfect — from décor to catering. Absolutely exceptional team!</p>
+        <p>Humble Hosts transformed our pre-opening process completely. Their expertise and attention to detail gave us the confidence to launch with a strong operational foundation from day one.</p>
         <div class="testimonial-author">
-          <div class="author-avatar">RK</div>
-          <div class="author-info"><strong>Rajiv Khanna</strong><span>CEO, TechCorp India</span></div>
+          <div class="author-avatar">RM</div>
+          <div class="author-info"><strong>Rajiv Mehta</strong><span>General Manager, Boutique Resort · Uttarakhand</span></div>
         </div>
       </div>
       <div class="testimonial-card">
         <div class="stars">★★★★★</div>
-        <p>Our wedding was a dream come true. The team handled everything with grace and precision. Guests are still talking about how magical the evening was!</p>
+        <p>The financial optimization work Humble Hosts did for us was remarkable. We saw a tangible reduction in operational costs within three months without compromising on guest experience.</p>
         <div class="testimonial-author">
-          <div class="author-avatar">PS</div>
-          <div class="author-info"><strong>Priya & Sameer</strong><span>Wedding Clients</span></div>
+          <div class="author-avatar">AK</div>
+          <div class="author-info"><strong>Ananya Kapoor</strong><span>Director of Operations, Heritage Hotel · Dehradun</span></div>
         </div>
       </div>
       <div class="testimonial-card">
         <div class="stars">★★★★★</div>
-        <p>We entrusted Events Forever with a major government public ceremony. Their professionalism and flawless execution exceeded every expectation we had.</p>
+        <p>Their talent acquisition process is unlike any consultancy we've worked with. Every hire they made for us was a culture-fit and high performer. Our team quality has completely elevated.</p>
         <div class="testimonial-author">
-          <div class="author-avatar">AM</div>
-          <div class="author-info"><strong>Arjun Mehta</strong><span>District Collector</span></div>
+          <div class="author-avatar">SB</div>
+          <div class="author-info"><strong>Suresh Bhandari</strong><span>Founder, Fine Dining Group · Delhi NCR</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TEAM -->
-<section id="team">
-  <div class="container">
-    <div class="text-center">
-      <div class="section-badge">Our People</div>
-      <h2 class="section-title reveal">The Minds Behind <br>the Magic</h2>
-      <div class="gold-divider"></div>
-    </div>
-    <div class="team-grid reveal">
-      <div class="team-card">
-        <div class="team-avatar">👨‍💼</div>
-        <h4>Aryan Sharma</h4>
-        <div class="role">Event Director</div>
-        <p>15+ years crafting landmark events across corporate and government sectors.</p>
-      </div>
-      <div class="team-card">
-        <div class="team-avatar">👩‍🎨</div>
-        <h4>Meera Kapoor</h4>
-        <div class="role">Creative Head</div>
-        <p>Award-winning designer transforming visions into immersive experiences.</p>
-      </div>
-      <div class="team-card">
-        <div class="team-avatar">👨‍🔧</div>
-        <h4>Suresh Nair</h4>
-        <div class="role">Facilities Engineer</div>
-        <p>Expert in large-scale facility operations and technical event infrastructure.</p>
-      </div>
-      <div class="team-card">
-        <div class="team-avatar">👩‍🍳</div>
-        <h4>Anita Desai</h4>
-        <div class="role">Catering Manager</div>
-        <p>Master chef with expertise in mass catering and gourmet event dining.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- IMAGE GALLERY STRIP -->
+<div style="display:grid;grid-template-columns:repeat(5,1fr);height:260px;overflow:hidden" class="img-strip-grid">
+  <div style="overflow:hidden"><img src="1.jpeg" alt="Hospitality project" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'"></div>
+  <div style="overflow:hidden"><img src="2.jpeg" alt="Hospitality project" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'"></div>
+  <div style="overflow:hidden"><img src="3.jpeg" alt="Hospitality project" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'"></div>
+  <div style="overflow:hidden"><img src="4.jpeg" alt="Hospitality project" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'"></div>
+  <div style="overflow:hidden"><img src="5.jpeg" alt="Hospitality project" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'"></div>
+</div>
 
 <!-- CTA -->
 <section class="cta-section">
-  <div class="cta-bg"><img src="party.png" alt="Event celebration"></div>
+  <div class="cta-bg"><img src="3.jpeg" alt="Hospitality excellence"></div>
   <div class="container">
-    <h2 class="reveal">Let's Plan Your Next Event</h2>
-    <p class="reveal">From concept to celebration — we're ready when you are.</p>
-    <a href="#contact" class="btn-white reveal">Contact Us Today →</a>
+    <h2 class="reveal">Ready to Transform?<br>Let's Build Something Exceptional Together</h2>
+    <p class="reveal">From boutique properties to large-scale hotels — our solutions are built around your unique vision. Start with a no-obligation consultation.</p>
+    <a href="#contact" class="btn-white reveal">Book Your Consultation →</a>
   </div>
 </section>
 
@@ -666,60 +677,56 @@ footer ul li a:hover{color:var(--gold)}
   <div class="container">
     <div class="text-center">
       <div class="section-badge">Get In Touch</div>
-      <h2 class="section-title reveal">Start Your Event Journey</h2>
+      <h2 class="section-title reveal">Start Your Transformation</h2>
       <div class="gold-divider"></div>
-      <p class="section-sub reveal">Reach out and let's create something extraordinary together.</p>
+      <p class="section-sub reveal">We'd love to hear about your property and vision. Whether you're launching a new concept, scaling an existing operation, or looking to elevate guest experience — we're here to help.</p>
     </div>
     <div class="contact-grid reveal">
       <div>
         <div class="contact-info">
           <div class="contact-item">
-            <div class="contact-item-icon">📞</div>
-            <div class="contact-item-text"><strong>Phone</strong><span>Mrs Vian Dsouza +91 98765 43210<br>Mr Om Shukla +91 77770 84879<br>Ramanjaneya Bangla +91 7720004711</span></div>
+            <div class="contact-item-icon">✉</div>
+            <div class="contact-item-text"><strong>Email</strong><span>founder@humblehosts.in</span></div>
           </div>
           <div class="contact-item">
-            <div class="contact-item-icon">✉️</div>
-            <div class="contact-item-text"><strong>Email</strong><span>eventsforever79@gmail.com</span></div>
+            <div class="contact-item-icon">📞</div>
+            <div class="contact-item-text"><strong>Phone</strong><span>+91 87504 04444 / +91 81265 60530</span></div>
           </div>
           <div class="contact-item">
             <div class="contact-item-icon">📍</div>
-            <div class="contact-item-text"><strong>Address</strong><span>102 CTS, 349, HETALI SHIVALAYA, IRLA LANE, VILE PARLE (W), 
-<br>MUMBAI-400056 , India
-</span></div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-item-icon">🕐</div>
-            <div class="contact-item-text"><strong>Business Hours</strong><span>Mon – Sat: 9:00 AM – 7:00 PM</span></div>
+            <div class="contact-item-text"><strong>Location</strong><span>House 302 Ground Floor Dronpuri Lane 3 GMS Road, Dehradun, 248001</span></div>
           </div>
         </div>
-        <div style="margin-top:20px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-card);border:1.5px solid rgba(201,168,76,0.2)">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.885!2d72.83656!3d19.10744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9b8b0000001%3A0x1!2sIrla+Lane%2C+Vile+Parle+West%2C+Mumbai%2C+Maharashtra+400056%2C+India!5e0!3m2!1sen!2sin!4v1"
-            width="100%" height="240" style="border:0;display:block" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            title="Events Forever Office Location"></iframe>
+        <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="social-btn" href="#" aria-label="Instagram" style="background:rgba(3,48,30,0.08);border:1px solid rgba(3,48,30,0.15);color:var(--dark)">in</a>
+          <a class="social-btn" href="#" aria-label="Instagram" style="background:rgba(3,48,30,0.08);border:1px solid rgba(3,48,30,0.15);color:var(--dark)">ig</a>
+          <a class="social-btn" href="#" aria-label="Twitter" style="background:rgba(3,48,30,0.08);border:1px solid rgba(3,48,30,0.15);color:var(--dark)">𝕏</a>
+          <a class="social-btn" href="#" aria-label="WhatsApp" style="background:rgba(3,48,30,0.08);border:1px solid rgba(3,48,30,0.15);color:var(--dark)">wa</a>
         </div>
       </div>
       <div class="contact-form">
-        <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--dark);margin-bottom:24px">Request a Quote</h3>
+        <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--dark);margin-bottom:24px">Send Us a Message</h3>
         <div class="form-row">
-          <div class="form-group"><label>First Name</label><input type="text" placeholder="Aryan"></div>
-          <div class="form-group"><label>Last Name</label><input type="text" placeholder="Sharma"></div>
+          <div class="form-group"><label>First Name</label><input type="text" placeholder="First Name"></div>
+          <div class="form-group"><label>Last Name</label><input type="text" placeholder="Last Name"></div>
         </div>
-        <div class="form-group"><label>Email Address</label><input type="email" placeholder="eventsforever79@gmail.com"></div>
-        <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 98765 43210"></div>
-        <div class="form-group"><label>Service Required</label>
+        <div class="form-group"><label>Email Address</label><input type="email" placeholder="founder@humblehosts.in"></div>
+        <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 87504 04444"></div>
+        <div class="form-group"><label>Service of Interest</label>
           <select>
             <option value="">Select a service...</option>
-            <option>Event Management – Corporate</option>
-            <option>Event Management – Wedding</option>
-            <option>Event Management – Government</option>
-            <option>Facility Management</option>
-            <option>Food Court & Catering</option>
-            <option>Integrated Package</option>
+            <option>Operational Excellence</option>
+            <option>Financial Optimization</option>
+            <option>Pre-Opening Support</option>
+            <option>Talent Acquisition & HR</option>
+            <option>Sales & Revenue Growth</option>
+            <option>Digital & Creative Solutions</option>
+            <option>Culinary & Experience Design</option>
+            <option>Long-Term Partnership</option>
           </select>
         </div>
-        <div class="form-group"><label>Tell Us About Your Event</label><textarea placeholder="Describe your vision, date, expected guests..."></textarea></div>
-        <button class="btn-primary" style="width:100%;justify-content:center;border:none;font-family:'Poppins',sans-serif" onclick="alert('Thank you! We will contact you within 24 hours. ✦')">Send Message ✦</button>
+        <div class="form-group"><label>Tell Us About Your Property</label><textarea placeholder="Describe your property, goals, and how we can help..."></textarea></div>
+        <button class="btn-primary" style="width:100%;justify-content:center;border:none;font-family:'Poppins',sans-serif" onclick="alert('Thank you! We will contact you within 24 hours. ✦')">Send Message →</button>
       </div>
     </div>
   </div>
@@ -730,54 +737,50 @@ footer ul li a:hover{color:var(--gold)}
   <div class="footer-grid">
     <div class="footer-brand">
       <div class="logo-wrap">
-        <div class="footer-logo-mark"><img src="logo.png" alt="Events Forever Logo" style="width:100%;height:100%;object-fit:contain;border-radius:10px;"></div>
-        <span class="logo-name">Events <span>Forever</span></span>
+        <div class="footer-logo-mark"><img src="logo.png" alt="Humble Hosts Logo" style="width:100%;height:100%;object-fit:contain;border-radius:10px;"></div>
+        <span class="logo-name">Humble <span>Hosts</span></span>
       </div>
-      <p>Integrated Solutions for Events, Facilities, and Beyond. Creating unforgettable experiences since 2012.</p>
+      <p>A premier hospitality consultancy elevating hotels and restaurants through operational excellence, strategic insight, and luxury standards.</p>
       <div class="footer-social">
-        <a class="social-btn" href="#" aria-label="Facebook">f</a>
-        <a class="social-btn" href="#" aria-label="Instagram">📷</a>
         <a class="social-btn" href="#" aria-label="LinkedIn">in</a>
+        <a class="social-btn" href="#" aria-label="Instagram">ig</a>
         <a class="social-btn" href="#" aria-label="Twitter">𝕏</a>
-        <a class="social-btn" href="#" aria-label="YouTube">▶</a>
+        <a class="social-btn" href="#" aria-label="WhatsApp">wa</a>
       </div>
-    </div>
-    <div>
-      <h5>Quick Links</h5>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
     </div>
     <div>
       <h5>Services</h5>
       <ul>
-        <li><a href="#">Corporate Events</a></li>
-        <li><a href="#">Wedding Events</a></li>
-        <li><a href="#">Government Events</a></li>
-        <li><a href="#">Facility Management</a></li>
-        <li><a href="#">Food Court Mgmt</a></li>
-        <li><a href="#">Mass Catering</a></li>
+        <li><a href="#services">Operational Excellence</a></li>
+        <li><a href="#services">Financial Optimization</a></li>
+        <li><a href="#services">Pre-Opening Support</a></li>
+        <li><a href="#services">Talent Acquisition</a></li>
+        <li><a href="#services">Digital Solutions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#expertise">Our Expertise</a></li>
+        <li><a href="#process">How We Work</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
       </ul>
     </div>
     <div>
       <h5>Contact</h5>
       <ul>
-        <li><a href="tel:+919876543210">+91 98765 43210</a></li>
-        <li><a href="mailto:eventsforever79@gmail.com">eventsforever79@gmail.com</a></li>
-        <li><a href="#">102 CTS, 349, HETALI SHIVALAYA, IRLA LANE, VILE PARLE (W), 
-MUMBAI 400056</a></li>
-        <li><a href="#">400056, India</a></li>
+        <li><a href="mailto:founder@humblehosts.in">founder@humblehosts.in</a></li>
+        <li><a href="tel:+918750404444">+91 87504 04444</a></li>
+        <li><a href="tel:+918126560530">+91 81265 60530</a></li>
+        <li><a href="#">House 302 Ground Floor Dronpuri Lane 3 GMS Road, Dehradun, 248001</a></li>
+        <li><a href="#contact">Book a Consultation</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 Events Forever. All rights reserved.</p>
-    <span>✦ Integrated Solutions for Events, Facilities, and Beyond</span>
+    <p>© 2025 Humble Hosts Hospitality Consultancy. All rights reserved.</p>
+    <span>✦ "Crafting Exceptional Hospitality Experiences"</span>
   </div>
 </footer>
 
@@ -811,19 +814,6 @@ const counterObserver=new IntersectionObserver((entries)=>{
   });
 },{threshold:.3});
 document.querySelectorAll('.count').forEach(el=>counterObserver.observe(el));
-
-// Portfolio filter
-function filterPortfolio(cat,btn){
-  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.portfolio-item').forEach(item=>{
-    const show=cat==='all'||item.getAttribute('data-cat')===cat;
-    item.style.transition='all .4s';
-    item.style.opacity=show?'1':'0.2';
-    item.style.transform=show?'scale(1)':'scale(0.95)';
-    item.style.pointerEvents=show?'auto':'none';
-  });
-}
 </script>
 </body>
 </html>
