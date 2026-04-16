@@ -32,12 +32,12 @@ nav.scrolled .nav-logo img{width:180px;height:68px}
 .nav-logo-mark{width:36px;height:36px;background:linear-gradient(135deg,#03301E,#0a5c38);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:#C6A75E;font-size:16px;letter-spacing:1px}
 .nav-logo-text{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--dark);letter-spacing:.5px}
 .nav-logo-text span{color:var(--gold)}
-.nav-links{display:flex;align-items:center;gap:36px;list-style:none}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none}
 .nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:#C6A75E;transition:color .25s;letter-spacing:.3px}
 .nav-links a:hover{color:#e8c97a}
 nav.scrolled .nav-links a{color:#C6A75E}
 nav.scrolled .nav-links a:hover{color:#e8c97a}
-.nav-cta{background:linear-gradient(135deg,#03301E,#0a5c38);color:#C6A75E!important;padding:10px 24px;border-radius:50px;font-weight:600!important;box-shadow:0 4px 16px rgba(3,48,30,0.35);transition:transform .2s,box-shadow .2s!important}
+.nav-cta{background:linear-gradient(135deg,#03301E,#0a5c38);color:#C6A75E!important;padding:10px 20px;border-radius:50px;font-weight:600!important;font-size:13px!important;white-space:nowrap;box-shadow:0 4px 16px rgba(3,48,30,0.35);transition:transform .2s,box-shadow .2s!important}
 .nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(3,48,30,0.45)!important}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
 .hamburger span{width:24px;height:2px;background:var(--text);border-radius:2px;transition:all .3s}
@@ -47,7 +47,7 @@ nav.scrolled .nav-links a:hover{color:#e8c97a}
 .mobile-close{position:absolute;top:24px;right:28px;font-size:28px;cursor:pointer;color:var(--text2);background:none;border:none}
 
 /* ── HERO ── */
-.hero{min-height:100vh;background:linear-gradient(160deg,#03301E 0%,#05472c 50%,#073d26 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:100px 32px 60px}
+.hero{min-height:100vh;background:linear-gradient(160deg,#03301E 0%,#05472c 50%,#073d26 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:100px 32px 80px}
 .hero-orb{position:absolute;border-radius:50%;filter:blur(60px);opacity:.25}
 .hero-orb-1{width:500px;height:500px;background:radial-gradient(circle,rgba(198,167,94,0.3),transparent);top:-100px;right:-100px}
 .hero-orb-2{width:350px;height:350px;background:radial-gradient(circle,rgba(198,167,94,0.2),transparent);bottom:-50px;left:-80px}
@@ -237,18 +237,20 @@ footer ul li a:hover{color:#C6A75E}
 @media(max-width:1024px){
   .services-grid,.vmv-cards,.counters{grid-template-columns:repeat(2,1fr)}
   .why-points,.team-grid{grid-template-columns:repeat(2,1fr)}
-  .process-steps{grid-template-columns:repeat(3,1fr);gap:32px}
+  .process-steps{grid-template-columns:repeat(3,1fr)!important;gap:32px}
   .process-steps::before{display:none}
   .footer-grid{grid-template-columns:1fr 1fr}
   .about-grid{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
+  .about-flex{flex-direction:column!important}
 }
 @media(max-width:768px){
   .nav-links{display:none}
   .hamburger{display:flex}
+  .nav-logo img{width:140px!important;height:52px!important}
   section{padding:64px 20px}
   .services-grid,.vmv-cards,.counters,.why-points,.portfolio-grid,.team-grid,.testimonials-grid{grid-template-columns:1fr}
-  .process-steps{grid-template-columns:1fr 1fr}
+  .process-steps{grid-template-columns:1fr 1fr!important}
   .form-row{grid-template-columns:1fr}
   .hero-stats{gap:24px}
   .footer-grid{grid-template-columns:1fr}
@@ -258,6 +260,12 @@ footer ul li a:hover{color:#C6A75E}
   .hero-scroll{display:none}
   .about-img-box{height:320px}
   .img-strip-grid{grid-template-columns:repeat(2,1fr)!important;height:300px!important}
+  .about-flex{flex-direction:column!important;gap:32px!important}
+  .about-flex>div{min-width:unset!important;flex:unset!important;width:100%!important}
+  .expertise-brands{gap:24px!important;padding:0 20px!important}
+  .expertise-brands span{font-size:14px!important}
+  .cta-mid{padding:56px 20px!important}
+  .contact-grid{grid-template-columns:1fr!important}
 }
 @media(max-width:480px){
   section{padding:48px 16px}
@@ -267,17 +275,29 @@ footer ul li a:hover{color:#C6A75E}
   .hero-stat-num{font-size:28px}
   .hero-btns{flex-direction:column;align-items:center}
   .btn-primary,.btn-outline{width:100%;justify-content:center;text-align:center}
-  .process-steps{grid-template-columns:1fr}
+  .process-steps{grid-template-columns:1fr!important}
   .counters{grid-template-columns:1fr 1fr}
   .counter-num{font-size:36px}
   .nav-inner{padding:0 16px}
+  .nav-logo img{width:120px!important;height:44px!important}
   .contact-form{padding:20px 12px}
   .form-row{grid-template-columns:1fr}
   .footer-grid{gap:28px}
   .cta-section{padding:56px 16px}
+  .cta-mid{padding:48px 16px!important}
   .filter-btns{gap:8px}
   .filter-btn{padding:8px 16px;font-size:12px}
   .about-icon-grid{grid-template-columns:1fr 1fr;gap:12px;padding:16px}
+  .about-img-badges{grid-template-columns:1fr 1fr;gap:8px}
+  .about-badge-pill{padding:10px 12px}
+  .about-badge-pill p{font-size:11px}
+  .img-strip-grid{grid-template-columns:repeat(2,1fr)!important;height:220px!important}
+  .expertise-brands{flex-direction:column!important;align-items:center!important;gap:12px!important}
+  .expertise-brands .sep{display:none}
+  .vmv-card{padding:24px 20px}
+  .service-card{padding:28px 20px}
+  .hero-h1 br{display:none}
+  .section-title br{display:none}
 }
 </style>
 </head>
@@ -310,6 +330,7 @@ footer ul li a:hover{color:#C6A75E}
   <a href="#expertise" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Expertise</a>
   <a href="#process" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Process</a>
   <a href="#contact" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Contact</a>
+  <a href="#contact" onclick="document.querySelector('.mobile-menu').classList.remove('open')" style="background:linear-gradient(135deg,#03301E,#0a5c38);color:#C6A75E;padding:14px 32px;border-radius:50px;font-size:16px;margin-top:8px">✦ Book a Consultation</a>
 </div>
 
 <!-- HERO -->
@@ -340,7 +361,7 @@ footer ul li a:hover{color:#C6A75E}
 <!-- ABOUT -->
 <section class="about" id="about">
   <div class="container">
-    <div style="display:flex;gap:56px;align-items:flex-start;flex-wrap:wrap">
+    <div class="about-flex" style="display:flex;gap:56px;align-items:flex-start;flex-wrap:wrap">
       <div style="flex:1;min-width:260px">
         <div class="section-badge">Who We Are</div>
         <h2 class="section-title reveal">A Premier Hospitality<br>Consultancy</h2>
@@ -494,21 +515,21 @@ footer ul li a:hover{color:#C6A75E}
     <span style="font-size:12px;font-weight:600;color:rgba(198,167,94,0.5);letter-spacing:2px;text-transform:uppercase">Our Credentials · Global Standards. Personalized Execution.</span>
   </div>
   <div style="font-size:13px;font-weight:600;color:rgba(198,167,94,0.5);text-align:center;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px">LEADERSHIP EXPERIENCE FROM GLOBALLY RECOGNIZED BRANDS</div>
-  <div style="display:flex;gap:48px;justify-content:center;flex-wrap:wrap;padding:0 32px">
+  <div class="expertise-brands" style="display:flex;gap:48px;justify-content:center;flex-wrap:wrap;padding:0 32px">
     <span style="color:#C6A75E;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">The Oberoi</span>
-    <span style="color:rgba(198,167,94,0.4)">✦</span>
+    <span class="sep" style="color:rgba(198,167,94,0.4)">✦</span>
     <span style="color:#C6A75E;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">ITC Luxury Collection Hotels</span>
-    <span style="color:rgba(198,167,94,0.4)">✦</span>
+    <span class="sep" style="color:rgba(198,167,94,0.4)">✦</span>
     <span style="color:#C6A75E;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">Reliance Industries</span>
-    <span style="color:rgba(198,167,94,0.4)">✦</span>
+    <span class="sep" style="color:rgba(198,167,94,0.4)">✦</span>
     <span style="color:#C6A75E;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">Sodexo</span>
-    <span style="color:rgba(198,167,94,0.4)">✦</span>
+    <span class="sep" style="color:rgba(198,167,94,0.4)">✦</span>
     <span style="color:#C6A75E;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">Radisson</span>
-    <span style="color:rgba(198,167,94,0.4)">✦</span>
+    <span class="sep" style="color:rgba(198,167,94,0.4)">✦</span>
     <span style="color:#C6A75E;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">Hilton</span>
-    <span style="color:rgba(198,167,94,0.4)">✦</span>
+    <span class="sep" style="color:rgba(198,167,94,0.4)">✦</span>
     <span style="color:#C6A75E;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">The Park Hotels</span>
-    <span style="color:rgba(198,167,94,0.4)">✦</span>
+    <span class="sep" style="color:rgba(198,167,94,0.4)">✦</span>
     <span style="color:#C6A75E;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">Vantara Niwas</span>
   </div>
   <div style="text-align:center;margin-top:28px;padding:0 32px">
@@ -570,7 +591,7 @@ footer ul li a:hover{color:#C6A75E}
 </section>
 
 <!-- MID CTA -->
-<section class="cta-section" style="padding:72px 32px">
+<section class="cta-section cta-mid" style="padding:72px 32px">
   <div class="cta-bg"><img src="2.jpeg" alt="Hospitality excellence"></div>
   <div class="container">
     <h2 class="reveal">"We partner with you not just to grow, but to lead."</h2>
@@ -588,7 +609,7 @@ footer ul li a:hover{color:#C6A75E}
       <div class="gold-divider"></div>
       <p class="section-sub reveal">A structured, results-driven journey from discovery to long-term partnership.</p>
     </div>
-    <div class="process-steps reveal" style="grid-template-columns:repeat(5,1fr)">
+    <div class="process-steps reveal">
       <div class="process-step">
         <div class="step-circle">1</div>
         <h3>Discovery</h3>
